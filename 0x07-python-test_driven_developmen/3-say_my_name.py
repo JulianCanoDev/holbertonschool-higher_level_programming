@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This document describes a function
+say_my_name a name function
 """
 
 
