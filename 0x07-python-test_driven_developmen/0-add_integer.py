@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 add_integer returns the sum of two integers
 c = a + b

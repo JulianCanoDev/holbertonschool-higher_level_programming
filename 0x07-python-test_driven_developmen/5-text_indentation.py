@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 This file manage the text-identation function
-Written by: daorejuela1
 """
 
 

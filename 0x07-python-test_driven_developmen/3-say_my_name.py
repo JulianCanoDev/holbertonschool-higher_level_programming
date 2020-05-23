@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This document describes a function that repeats the name of somebody else
+This document describes a function
 """
 
 

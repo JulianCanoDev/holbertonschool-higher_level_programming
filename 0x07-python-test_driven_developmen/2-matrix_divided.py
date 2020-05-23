@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 matrix_divide a new matrix divided by div
-written by: daorejuela1
+written by: Julian Cano
 MIT License
 """
 
