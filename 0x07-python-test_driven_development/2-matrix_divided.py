@@ -16,30 +16,24 @@ def matrix_divided(matrix, div):
         TypeError: there is not a matrix,
         or not numbers, or uneven rows.
     """
-    err_message = "matrix must be a matrix (list of lists) of integers/floats"
-    if matrix is None:
-        raise TypeError(err_message)
-    if type(matrix) is not list or type(matrix[0]) is not list:
-        raise TypeError(err_message)
-    # Check for all data in the matrix
-    for i in range(0, len(matrix)):
-        for j in range(0, len(matrix[0])):
-            if (type(matrix[i][j]) not in [int, float]):
-                raise TypeError(err_message)
-    # Check for row sizes
-    normal_size = len(matrix[0])
-    for i in range(0, len(matrix)):
-        if (normal_size != len(matrix[i])):
-            raise TypeError("Each row of the matrix must have the same size")
-    # Check for datatype of div
-    if (type(div) is not int and type(div) is not float):
+    res = []
+    files = []
+    a = "matrix must be a matrix (list of lists) of integers/floats"
+    if type(matrix) != list or len(matrix) == 0:
+        raise TypeError(a)
+    if type(div) not in [int, float]:
         raise TypeError("div must be a number")
-    # Divison by zero case
-    if (div == 0):
+    if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_matrix = [x[:] for x in matrix]
-    for i in range(0, len(new_matrix)):
-        for j in range(0, len(new_matrix[0])):
-            new_matrix[i][j] = round(new_matrix[i][j] / div, 2)
-
-    return (new_matrix)
+    for i in matrix:
+        if type(i) != list:
+            raise TypeError(a)
+        if len(i) != len(matrix[0]):
+            raise TypeError("Each row of the matrix must have the same size")
+        for j in i:
+            if type(j) not in [int, float]:
+                raise TypeError(a)
+            files.append(round(j / div, 2))
+        res.append(files)
+        files = []
+    return res
