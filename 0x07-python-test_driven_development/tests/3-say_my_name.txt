@@ -28,3 +28,18 @@ Now use it:
 Now use it:
     >>> say_my_name("", "")
     My name is  
+
+Now use it:
+    >>> say_my_name("Julian", 2)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+Now use it:
+    >>> say_my_name(2, "Julian")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Now use it:
+    >>> say_my_name(["3"], "Julian")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
