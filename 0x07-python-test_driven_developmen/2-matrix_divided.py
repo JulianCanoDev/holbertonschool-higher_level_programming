@@ -11,9 +11,9 @@ def matrix_divided(matrix, div):
         matrix: matrix to be divided
         div: matrix divisor
     Returns:
-        return each element divided by div.
+        return each matrix element divided by div.
     Raises:
-        TypeError: not a matrix,
+        TypeError: there is not a matrix,
         or not numbers, or uneven rows.
     """
     err_message = "matrix must be a matrix (list of lists) of integers/floats"
