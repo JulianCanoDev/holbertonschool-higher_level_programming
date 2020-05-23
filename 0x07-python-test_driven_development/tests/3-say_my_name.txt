@@ -43,3 +43,13 @@ Now use it:
     >>> say_my_name(["3"], "Julian")
     Traceback (most recent call last):
     TypeError: first_name must be a string
+
+Now use it:
+    >>> say_my_name(("fa", "tr"), "Julian")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Now use it:
+    >>> say_my_name(None, None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
