@@ -8,8 +8,8 @@ def matrix_divided(matrix, div):
     """
     This divides a matrix by a number div.
     Args:
-        matrix: first number.
-        div: second number.
+        matrix: matrix to be divided
+        div: matrix divisor
     Returns:
         return each element divided by div.
     Raises:
