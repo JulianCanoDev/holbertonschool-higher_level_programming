@@ -4,9 +4,12 @@
 
 class Rectangle:
     """Init method"""
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -61,10 +64,10 @@ class Rectangle:
     def __repr__(self):
         """ return rectangle"""
         return 'Rectangle(' + str(self.__width) + \
-            ', ' + str(self.__height) + ')'
+            ',' + str(self.__height) + ')'
 
     def __del__(self):
-        """Delete object """
+        """Deleting object"""
         print("Bye rectangle...")
         if Rectangle.number_of_instances:
             Rectangle.number_of_instances -= 1
