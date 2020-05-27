@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 This file multiplies two matrix
-Written by: daorejuela1
 """
 
 
