@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Student that defines a student"""
-import json
 
 
 class Student():
