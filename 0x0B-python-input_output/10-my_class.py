@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" My class module
-"""
+""" My class module"""
 
 class MyClass:
     """ My class
