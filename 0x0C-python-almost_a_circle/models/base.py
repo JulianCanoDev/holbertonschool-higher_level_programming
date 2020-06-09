@@ -63,7 +63,6 @@ class Base():
                 instance_list.append(cls.create(**instance))
         return (instance_list)
 
-
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file"""
