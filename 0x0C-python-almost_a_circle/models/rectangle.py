@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Rectagle class that heredit from base"""
+"""
+Rectagle class that heredit from base
+"""
 from models.base import Base
 
 

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""This is a Square class that heredit from Rectangle"""
+"""
+This is a Square class that heredit from Rectangle
+"""
 from models.rectangle import Rectangle
 
 
