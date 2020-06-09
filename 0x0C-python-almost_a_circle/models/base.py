@@ -3,7 +3,6 @@
 import json
 import os
 import csv
-import turtle
 import random
 
 
@@ -38,10 +37,16 @@ class Base():
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 jsonf.write(Base.to_json_string(list_dicts))
 
+    @staticmethod
+    def from_json_string(json_string):
+        """Return the deserialization of a JSON string"""
+        if json_string is None or json_string == "[]":
+            return []
+        return json.loads(json_string)
+
     @classmethod
     def create(cls, **dictionary):
-        """Creates an instance from a dictionary
-        """
+        """Creates an instance from a dictionary"""
         if (cls.__name__ == "Square"):
             dummy = cls(2)
         elif (cls.__name__ == "Rectangle"):
@@ -51,8 +56,7 @@ class Base():
 
     @classmethod
     def load_from_file(cls):
-        """Loads file and returns a list of instances
-        """
+        """Loads file and returns a list of instances"""
         instance_list = []
         filename = cls.__name__ + ".json"
         if not os.path.isfile(filename):
