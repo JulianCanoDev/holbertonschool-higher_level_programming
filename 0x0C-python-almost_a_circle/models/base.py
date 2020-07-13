@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+# base.py
 """
 first class Base file
 """
 import json
 import os
+import os.path
 import csv
 import random
 
@@ -18,7 +20,7 @@ class Base():
             self.id = id
         else:
             Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            self.id = self.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
