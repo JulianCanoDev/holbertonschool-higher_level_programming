@@ -6,10 +6,6 @@ import MySQLdb
 import sys
 
 
-if __name__ == "__main__":
-    print_states(init_db())
-
-
 def init_db():
     """initializes a db with MySQLdb"""
     db = MySQLdb.connect(host='localhost',
@@ -29,3 +25,7 @@ def print_states(db):
         print(row)
     cur.close()
     db.close()
+
+
+if __name__ == "__main__":
+    print_states(init_db())
