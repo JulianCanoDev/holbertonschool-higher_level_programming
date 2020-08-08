@@ -29,4 +29,3 @@ def print_states(db):
 
 if __name__ == "__main__":
     print_states(init_db())
-    
