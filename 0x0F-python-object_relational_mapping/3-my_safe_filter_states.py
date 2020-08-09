@@ -21,13 +21,14 @@ def input(s):
     s = ''.join([i for i in s if i != "'" and i != ';'])
     return s
 
+
 def print_state(db):
     """print state from input database"""
     cur = db.cursor()
     name = input(sys.argv[4])
     cur.execute("SELECT * FROM states "
-            "WHERE name LIKE BINARY '%{}%' "
-            "ORDER BY states.id ASC".format(name))
+                "WHERE name LIKE BINARY '%{}%' "
+                "ORDER BY states.id ASC".format(name))
     for row in cur.fetchall():
         print(row)
     cur.close()
