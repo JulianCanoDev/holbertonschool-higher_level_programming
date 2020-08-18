@@ -2,11 +2,8 @@
 
 
 def find_peak(list_of_integers):
-    """Find a peak in a list of integers.
-    Example:
-        [1, 2, 4, 6, 3] -> 6
-        [4, 2, 1, 2, 3, 1] -> 3 # but 4 is also a peak
-    Returns: integer that is the peak.
+    """
+    Find a peak in a list of integers.
     """
     l = len(list_of_integers)
     n = l // 2
