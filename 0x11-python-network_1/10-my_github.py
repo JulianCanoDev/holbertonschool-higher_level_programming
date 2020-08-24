@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Get GitHub id using github API along with Basic Authentication"""
+"""GitHub id using github API Authentication"""
 
 if __name__ == "__main__":
     from requests import get
