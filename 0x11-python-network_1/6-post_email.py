@@ -8,5 +8,5 @@ if __name__ == "__main__":
     try:
         req = post(argv[1], data={'email': argv[2]})
         print(req.text)
-    except Exception as e:
-        print(e)
+    except Exception as err:
+        print(err)
