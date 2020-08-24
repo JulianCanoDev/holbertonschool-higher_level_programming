@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-Get the 10 most recent commits from the repository specified on
-the command line ordered most recent to oldest in the
-format: `<sha>: <author name>`
+Get the 10 most recent commits from the repository specified
 """
 
 if __name__ == "__main__":
