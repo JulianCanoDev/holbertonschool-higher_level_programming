@@ -1,10 +1,12 @@
 #!/usr/bin/node
 // Read files
-var fs = require('fs');
+const fs = require('fs');
 
-try {
-  const data = fs.readFileSync(process.argv[2], 'utf8');
-  console.log(data.toString());
-} catch (e) {
-  console.log('Error:', e.stack);
-}
+fs.readFile(process.argv[2], 'utf8', (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+});
+
